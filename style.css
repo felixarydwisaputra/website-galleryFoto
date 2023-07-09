@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    box-sizing: border-box;
+    background-color: rgb(218, 218, 218);
+}
+
+.judul {
+    height: 100vh;
+    width: 40%;
+    float: left;
+}
+
+.sidebar{
+    height: 100vh;
+    width: 60%;
+    float: left;
+}
+
+.jumbo{
+    margin: 350px auto;
+    padding-left: 90px;
+}
+
+.jumbo h1{
+    font-size: 100px;
+    line-height: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+    padding-top: 50px;
+}
+
+.sidebar .container-jumbo{
+    margin: 100px auto;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .5);
+
+}
+
+.container-jumbo img{
+    width: 900px;
+}
+
+.sidebar .container-foto{
+    margin: -50px auto;
+    width: 900px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.container-foto img{
+    width: 222px;
+    transition: .3s;
+}
+
+.sidebar .container-foto .thumb:hover{
+    opacity: .5;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade{
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+.active{
+    opacity: .5;
+}
